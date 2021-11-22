@@ -1,0 +1,48 @@
+<p>Bienvenido a Inventario!</p>
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h2 class="h2">Productos en Inventario</h2>
+ </div>
+
+<div class="table-responsive">
+
+    <table class="table table-bordered border-primary">
+      <thead>
+        <tr>
+          <th scope="col">cod</th>
+                <!--<th scope="col">cod producto</th> -->                          
+                <th scope="col">EXISTENCIA</th>
+                <th scope="col">INTRODUCCION</th>
+                <th scope="col">MODIFICACION</th>
+                <!--<th scope="col">COD_TIP_PRODUCTO</th>-->
+                <th scope="col">NOMBRE</th>
+                <th scope="col">PRECIO</th>
+                <th scope="col">FOTOGRAFIA</th>
+                <!--<th scope="col">VENCIMIENTO</th>
+                <th scope="col">DESCRIPCION</th>
+                <th scope="col">PRESENTACION</th>-->
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <tr *ngFor="let invt of inv">
+            <th scope="row">{{invt.COD_INVENTARIO}}</th>
+            <!--<td>{{invt.COD_PRODUCTO}}</td>-->
+            <td>{{invt.CAN_EXISTENCIA}}</td>
+            <td>{{invt.FEC_INTRODUCCION}}</td>
+            <td>{{invt.FEC_MODIFICACION}}</td>
+            <!--<td>{{invt.COD_TIP_PRODUCTO}}</td>-->
+            <td>{{invt.NOMBRE_PRODUCTO}}</td>
+            <td>{{invt.PRECIO}}</td>
+            <td>{{invt.FOTOGRAFIA}}</td>
+            <!--<td>{{invt.VIDA_UTIL}}</td
+            <td>{{invt.DESCRIPCION}}</td>
+            <td>{{invt.PRE_PRODUCTO}}</td>
+            <td>{{invt.FEC_CADUCIDAD}}</td>
+            <td>{{invt.TIP_PRODUCTO}}</td>
+            <td>{{invt.DES_TIP_PRODUCTO}}</td>-->
+
+            <td class="text-center">
+        </tr>
+      
+      </tbody>
+    </table>

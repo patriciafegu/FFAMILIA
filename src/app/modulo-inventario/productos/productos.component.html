@@ -1,0 +1,82 @@
+
+<p>"Bienvenido a Productos"</p>
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h2 class="h2">Lista de Productos</h2>
+ </div>
+
+<div class="table-responsive">
+
+<table class="table table-bordered border-primary">
+  <thead>
+    <tr>
+      <th scope="col">cod</th>
+            <th scope="col">tipo</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">precio</th>
+            <th scope="col">Imagen</th>
+            <th scope="col">vida util</th>
+            <th scope="col">descripcion</th>
+            <th scope="col">presentacion</th>
+            <th scope="col">vencimiento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <tr *ngFor="let prod of products">
+        <th scope="row">{{prod.COD_PRODUCTO}}</th>
+        <td>{{prod.COD_TIP_PRODUCTO}}</td>
+        <td>{{prod.NOMBRE_PRODUCTO}}</td>
+        <td>{{prod.PRECIO}}</td>
+        <td>{{prod.FOTOGRAFIA}}</td>
+        <td>{{prod.VIDA_UTIL}}</td>
+        <td>{{prod.DESCRIPCION}}</td>
+        <td>{{prod.PRE_PRODUCTO}}</td>
+        <td>{{prod.FEC_CADUCIDAD}}</td>
+        <td class="text-center">
+    </tr>
+  
+  </tbody>
+</table>
+
+
+<!--<div class="container">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h2 class="h2"> Productos</h2>
+    </div>
+  
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">cod</th>
+            <th scope="col">tipo</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">precio</th>
+            <th scope="col">Imagen</th>
+            <th scope="col">vida util</th>
+            <th scope="col">descripcion</th>
+            <th scope="col">presentacion</th>
+            <th scope="col">vencimiento</th>
+            <th class="text-center" scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let boo of products">
+            <th scope="row">{{boo.COD_PRODUCTO}}</th>
+            <td>{{boo.COD_TIP_PRODUCTO}}</td>
+            <td>{{boo.NOMBRE_PRODUCTO}}</td>
+            <td>{{boo.PRECIO}}</td>
+            <td>{{boo.FOTOGRAFIA}}</td>
+            <td>{{boo.VIDA_UTIL}}</td>
+            <td>{{boo.DESCRIPCION}}</td>
+            <td>{{boo.PRE_PRODUCTO}}</td>
+            <td>{{boo.FEC_CADUCIDAD}}</td>
+            <td class="text-center">
+              <button class="btn btn-sm btn-primary" routerLink="/edit-boo/{{boo.COD_PRODUCTO}}">Edit</button>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>-->
+

@@ -1,0 +1,33 @@
+<p>"Bienvenido a Tipo Productos"</p>
+<div class="container">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+     <h2 class="h2">Tipos de Productos</h2>
+    </div>
+  
+    <div class="table-responsive">
+      <table class="table table-bordered border-primary">
+        
+        <thead>
+          <tr>
+            <th scope="col">cod</th>
+            <th scope="col">tipo</th>
+            <th scope="col">cantidad</th>
+            <th scope="col">Description</th>
+           <th class="text-center" scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let tipos of tipoProductos">
+            <th scope="row">{{tipos.COD_TIP_PRODUCTO}}</th>
+            <td>{{tipos.TIP_PRODUCTO}}</td>
+            <td>{{tipos.CANTIDAD}}</td>
+            <td>{{tipos.DES_TIP_PRODUCTO}}</td>
+            <td class="text-center">
+           <!--<button (Click)="GetTipoProducto(id:{{tipos.COD_TIP_PRODUCTO}})" class="btn btn-sm btn-primary">Edit</button>-->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  
