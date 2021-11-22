@@ -1,0 +1,27 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h2 class="h2">Codigos Qr</h2>
+   </div>
+  
+  <div class="table-responsive">
+  
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th scope="col">COD</th>
+              <th scope="col">SERIE</th>
+              <th scope="col">USUARIO</th>
+              <th scope="col">FECHA</th>
+              </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <tr *ngFor="let cod of Codigos">
+          <th scope="row">{{cod.COD_QR}}</th>
+            <td>{{cod.SEQ_QR}}</td>
+            <td>{{cod.USR_REGISTRO}}</td>
+            <td>{{cod.FEC_REGISTRO}}</td>
+            <td class="text-center">
+      </tr>
+    
+    </tbody>
+  </table>

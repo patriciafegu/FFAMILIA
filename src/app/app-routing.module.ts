@@ -8,6 +8,9 @@ import { TipoProductoComponent } from './modulo-inventario/tipo-producto/tipo-pr
 import { ProductosComponent } from './modulo-inventario/productos/productos.component';
 import { InventarioComponent } from './modulo-inventario/inventario/inventario.component';
 
+import { PlantasComponent } from './modulo-Appqr/Plantas/plantas.component';
+import { CodigoQrComponent } from './modulo-Appqr/CodigoQr/codigoqr.component';
+
 import {PersonaComponent} from './modulo-persona/persona/persona.component';
 
 
@@ -21,6 +24,8 @@ const routes: Routes = [
      { path: 'productos', component: ProductosComponent },
      {path: 'inventario', component: InventarioComponent },
 
+     {path: 'plantas', component: PlantasComponent },
+     {path: 'codigoqr', component: CodigoQrComponent },
     { path: 'peo', component: PersonaComponent }
 
   ],
@@ -36,5 +41,7 @@ export class AppRoutingModule { }
 export const rountingComponents=[
   TipoProductoComponent,
   ProductosComponent,
-  InventarioComponent ]
+  InventarioComponent,
+  PlantasComponent,
+  CodigoQrComponent ]
 
